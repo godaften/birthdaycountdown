@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    margin-top: 5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.h1forside {
+    margin-top:10%;
+    color:white;
+}
+.divforsiden {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divcountdown, .indexoversigt {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.divtime {
+    font-weight: bold;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5em;
+    line-height: 0rem;
+}
+
+.btn {
+    width: 100px;
+    margin:20px;
+    padding: 10px;
+    border-radius: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 2px 5px 10px #888888;
+    transition: 0.3s;
+    border:none;
+
+}
+
+.btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.forsiden {
+    align-items: center;
+    justify-content: center;
+}
+
+.sommer {
+    background-color: green;
+    color:white;
+}
+
+.jul {
+    background-color: rgb(180, 19, 19);
+    color: white;
+}
+
+#days, #hours, #minutes, #seconds {
+    font-size: 4rem;
+}
+
+.ptime{
+    margin: 0;
+}
