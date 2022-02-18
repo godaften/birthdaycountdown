@@ -17,6 +17,12 @@ h1 {
     text-align: center;
 }
 
+@media screen and (max-width:850px) {
+    h1 {
+        font-size: 2rem;
+    }
+}
+
 .h1forside {
     margin-top:10%;
     color:white;
@@ -80,6 +86,13 @@ h1 {
 #days, #hours, #minutes, #seconds {
     font-size: 4rem;
 }
+
+@media screen and (max-width:850px) {
+
+    #days, #hours, #minutes, #seconds {
+        font-size: 1rem;
+    } 
+    }
 
 .ptime{
     margin: 0;
