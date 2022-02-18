@@ -7,13 +7,44 @@
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
-<body style="background-image: url('timeglas.jpg');"></body><body>
-    <h1 class="h1forside">Hvornår er det...?</h1>
-    <div class="divforsiden">
-        <button onclick="document.location='sommer.html'" class="btn sommer">Sommer</button>
-        <button onclick="document.location='jul.html'" class="btn jul">Jul</button>
-        
+
+<body style="background-image: url('sommer.jpg');">
+    <h1>Nedtælling til fødselsdag</h1>
+
+    <div class="divknapper dv1">
+
+        <button id="btnbella" class="btn">Bella</button>
+        <button id="btnluna" class="btn">Luna</button>
+        <button id="btnbella" class="btn">Rufus</button>
+
+    </div>
+
+    <div class="divknapper dv2">
+
+        <button id="btnliva" class="btn">Liva</button>
+        <button id="btnmor" class="btn">Mor</button>
+        <button id="btnfar" class="btn">Far</button>
+
     </div>
     
+        <div id="divcountdown" class="divcountdown">
+            <div class="divtime">
+                <p class="ptime">Dage</p>
+                <p id="days"></p>
+            </div>
+            <div class="divtime">
+                <p class="ptime">Timer</p>
+                <p id="hours"></p>
+            </div>
+            <div class="divtime">
+                <p class="ptime">Minutter</p>
+                <p id="minutes"></p>
+            </div>
+            <div class="divtime">
+                <p class="ptime">Sekunder</p>
+                <p id="seconds"></p>
+            </div>
+        </div>
+        <script src="calc.js"></script>
 </body>
 </html>

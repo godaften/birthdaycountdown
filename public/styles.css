@@ -23,18 +23,24 @@ h1 {
     }
 }
 
-.h1forside {
-    margin-top:10%;
-    color:white;
-}
-
-
-.divcountdown, .divforsiden {
+.divcountdown, .divknapper {
     display:flex;
     align-items: center;
     justify-content: center;
 }
 
+.divknapper {
+    flex-direction: row;
+    margin-bottom:50px;
+}
+
+@media screen and (max-width:850px) {
+    .divknapper {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
 
 .divtime {
     font-weight: bold;

@@ -4,14 +4,22 @@ const minutes = document.getElementById('minutes')
 const seconds = document.getElementById('seconds')
 
 const currentYear = new Date().getFullYear()
+const setCountdownTime = new Date(`June 1 ${ currentYear } 00:00:00`)
+const setCountdownTimeNextYear = new Date(`June 1 ${ currentYear +1 } 00:00:00`)
 
-const timeJul = new Date(`December 24 ${currentYear} 00:00:00`)
-
-function countdownJul() {
+function countdownTime() {
 
     const currentTime = new Date()
-    const diff = timeJul - currentTime
-  
+
+    let diff = setCountdownTime - currentTime
+
+    if (setCountdownTime > currentTime) {
+        diff = setCountdownTime - currentTime
+    }
+    else {
+        diff = setCountdownTimeNextYear - currentTime
+    }
+
     const d = Math.floor(diff / 1000 / 60 / 60 / 24)
     const h = Math.floor(diff / 1000 / 60 / 60) % 24
     const m = Math.floor(diff / 1000 / 60) % 60
@@ -23,4 +31,4 @@ function countdownJul() {
     seconds.innerText = s < 10 ? '0' + s : s
 }
 
- setInterval(countdownJul, 1000)
+ setInterval(countdownTime, 1000)
