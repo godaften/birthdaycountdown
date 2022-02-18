@@ -5,7 +5,7 @@ const seconds = document.getElementById('seconds')
 
 const currentYear = new Date().getFullYear()
 
-const timeSommer = new Date(`Jule 1 ${currentYear} 00:00:00`)
+const timeSommer = new Date(`June 1 ${currentYear} 00:00:00`)
 
 function countdownSommer() {
 
